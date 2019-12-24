@@ -1,0 +1,25 @@
+<table border="1">
+    <script>
+        for (i = 1; i < 10; i++) {
+            document.write(`<tr><td> ${i} </td></tr>`)
+        }
+    </script>
+</table>
+
+<script>
+    imgList = ["download (1)", "download (2)", "download (3)"]
+    for (i = 0; i < 3; i++) {
+        document.write(`<img width=200px height=200px src='img\\${imgList[i]}.jpg'>`);
+    }
+
+    document.write('<hr/>');
+    for (i in imgList) {
+        document.write(`<img width=200px height=200px src='img\\${imgList[i++]}.jpg'>`);
+    }
+
+    document.write('<hr/>');
+    i = 0;
+    while (i < 3) {
+        document.write(`<img width=200px height=200px src='img\\${imgList[i++]}.jpg'>`);
+    }
+</script>

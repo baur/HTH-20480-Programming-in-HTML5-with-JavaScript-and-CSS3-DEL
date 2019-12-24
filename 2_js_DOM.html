@@ -1,0 +1,44 @@
+<img src="img\download (1).jpg" alt="" id='img1' onclick="changeImg()" 
+style = "border-color: blue; border-width:20; border-style: solid;"
+>
+
+<img src="img\download (2).jpg" alt="" id='img2' 
+style = "border-color: blue; border-width:20; border-style: solid;"
+onmouseover="razmer(this,100)"
+onmouseout="razmer(this,200)"
+>
+
+<script>
+function changeImg() {
+    img1.width = 200;
+    img1.style.borderColor = 'red';
+    //img1.style.borderSize = 5;
+    document.getElementById("img1").height=550;
+
+    
+    
+    
+}
+
+function razmer(o,r)
+{
+    o.width = r;
+}
+
+for (i in document.all) {
+    console.log(document.all[i].tagName);
+}
+</script>
+
+<div id = 'idofobj'>
+    <img>
+    <p></p>
+    <h1></h1>
+    </div>
+
+<script>
+    for (i in document.getElementById('idofobj').childeNodes)
+    {
+        console.log(i.tagName);
+    }
+</script>
